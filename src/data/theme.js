@@ -8,7 +8,7 @@ export default {
     },
     contacts: {
         address: '4190 - 00100 Nairobi',
-        email: 'isaac@soofapay.com',
-        phone: '+254721 732 519',
+        email: 'info@hashmart.ko.ke',
+        phone: '+254 716 110 444',
     },
 };

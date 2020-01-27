@@ -31,7 +31,7 @@ function Header(props) {
                         <FormattedMessage id="header.phoneLabel" defaultMessage="Customer Service" />
                     </div>
                     <div className="site-header__phone-number">
-                        <FormattedMessage id="header.phone" defaultMessage="(800) 060-0730" />
+                        <FormattedMessage id="header.phone" defaultMessage="+254 716 110 444" />
                     </div>
                 </div>
             </div>

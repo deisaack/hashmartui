@@ -1,178 +1,6 @@
 export default [
     {
-        title: 'Power Tools',
-        url: '',
-        submenu: {
-            type: 'megamenu',
-            menu: {
-                size: 'xl',
-                image: {
-                    ltr: 'images/megamenu/megamenu-1-ltr.jpg',
-                    rtl: 'images/megamenu/megamenu-1-rtl.jpg',
-                },
-                columns: [
-                    {
-                        size: 3,
-                        links: [
-                            {
-                                title: 'Power Tools',
-                                url: '',
-                                links: [
-                                    { title: 'Engravers', url: '' },
-                                    { title: 'Drills', url: '' },
-                                    { title: 'Wrenches', url: '' },
-                                    { title: 'Plumbing', url: '' },
-                                    { title: 'Wall Chaser', url: '' },
-                                    { title: 'Pneumatic Tools', url: '' },
-                                    { title: 'Milling Cutters', url: '' },
-                                ],
-                            },
-                            { title: 'Workbenches', url: '', links: [] },
-                            { title: 'Presses', url: '', links: [] },
-                            { title: 'Spray Guns', url: '', links: [] },
-                            { title: 'Riveters', url: '', links: [] },
-                        ],
-                    },
-                    {
-                        size: 3,
-                        links: [
-                            {
-                                title: 'Hand Tools',
-                                url: '',
-                                links: [
-                                    { title: 'Screwdrivers', url: '' },
-                                    { title: 'Handsaws', url: '' },
-                                    { title: 'Knives', url: '' },
-                                    { title: 'Axes', url: '' },
-                                    { title: 'Multitools', url: '' },
-                                    { title: 'Paint Tools', url: '' },
-                                ],
-                            },
-                            {
-                                title: 'Garden Equipment',
-                                url: '',
-                                links: [
-                                    { title: 'Motor Pumps', url: '' },
-                                    { title: 'Chainsaws', url: '' },
-                                    { title: 'Electric Saws', url: '' },
-                                    { title: 'Brush Cutters', url: '' },
-                                ],
-                            },
-                        ],
-                    },
-                    {
-                        size: 3,
-                        links: [
-                            {
-                                title: 'Machine Tools',
-                                url: '',
-                                links: [
-                                    { title: 'Thread Cutting', url: '' },
-                                    { title: 'Chip Blowers', url: '' },
-                                    { title: 'Sharpening Machines', url: '' },
-                                    { title: 'Pipe Cutters', url: '' },
-                                    { title: 'Slotting machines', url: '' },
-                                    { title: 'Lathes', url: '' },
-                                ],
-                            },
-                        ],
-                    },
-                    {
-                        size: 3,
-                        links: [
-                            {
-                                title: 'Instruments',
-                                url: '',
-                                links: [
-                                    { title: 'Welding Equipment', url: '' },
-                                    { title: 'Power Tools', url: '' },
-                                    { title: 'Hand Tools', url: '' },
-                                    { title: 'Measuring Tool', url: '' },
-                                ],
-                            },
-                        ],
-                    },
-                ],
-            },
-        },
-    },
-    {
-        title: 'Hand Tools',
-        url: '',
-        submenu: {
-            type: 'megamenu',
-            menu: {
-                size: 'lg',
-                image: {
-                    ltr: 'images/megamenu/megamenu-2-ltr.jpg',
-                    rtl: 'images/megamenu/megamenu-2-rtl.jpg',
-                },
-                columns: [
-                    {
-                        size: 4,
-                        links: [
-                            {
-                                title: 'Hand Tools',
-                                url: '',
-                                links: [
-                                    { title: 'Screwdrivers', url: '' },
-                                    { title: 'Handsaws', url: '' },
-                                    { title: 'Knives', url: '' },
-                                    { title: 'Axes', url: '' },
-                                    { title: 'Multitools', url: '' },
-                                    { title: 'Paint Tools', url: '' },
-                                ],
-                            },
-                            {
-                                title: 'Garden Equipment',
-                                url: '',
-                                links: [
-                                    { title: 'Motor Pumps', url: '' },
-                                    { title: 'Chainsaws', url: '' },
-                                    { title: 'Electric Saws', url: '' },
-                                    { title: 'Brush Cutters', url: '' },
-                                ],
-                            },
-                        ],
-                    },
-                    {
-                        size: 4,
-                        links: [
-                            {
-                                title: 'Machine Tools',
-                                url: '',
-                                links: [
-                                    { title: 'Thread Cutting', url: '' },
-                                    { title: 'Chip Blowers', url: '' },
-                                    { title: 'Sharpening Machines', url: '' },
-                                    { title: 'Pipe Cutters', url: '' },
-                                    { title: 'Slotting machines', url: '' },
-                                    { title: 'Lathes', url: '' },
-                                ],
-                            },
-                        ],
-                    },
-                    {
-                        size: 4,
-                        links: [
-                            {
-                                title: 'Instruments',
-                                url: '',
-                                links: [
-                                    { title: 'Welding Equipment', url: '' },
-                                    { title: 'Power Tools', url: '' },
-                                    { title: 'Hand Tools', url: '' },
-                                    { title: 'Measuring Tool', url: '' },
-                                ],
-                            },
-                        ],
-                    },
-                ],
-            },
-        },
-    },
-    {
-        title: 'Machine Tools',
+        title: 'Phones & Tablets',
         url: '',
         submenu: {
             type: 'megamenu',
@@ -187,25 +15,25 @@ export default [
                         size: 6,
                         links: [
                             {
-                                title: 'Hand Tools',
+                                title: 'MOBILE PHONES',
                                 url: '',
                                 links: [
-                                    { title: 'Screwdrivers', url: '' },
-                                    { title: 'Handsaws', url: '' },
-                                    { title: 'Knives', url: '' },
-                                    { title: 'Axes', url: '' },
-                                    { title: 'Multitools', url: '' },
-                                    { title: 'Paint Tools', url: '' },
+                                    { title: 'Smart Phones', url: '' },
+                                    { title: 'Blu Phones', url: '' },
+                                    { title: 'Feature Phones', url: '' },
+                                    { title: 'IPhones', url: '' },
                                 ],
                             },
                             {
-                                title: 'Garden Equipment',
+                                title: 'ACCESSORIES',
                                 url: '',
                                 links: [
-                                    { title: 'Motor Pumps', url: '' },
-                                    { title: 'Chainsaws', url: '' },
-                                    { title: 'Electric Saws', url: '' },
-                                    { title: 'Brush Cutters', url: '' },
+                                    { title: 'Batteries', url: '' },
+                                    { title: 'Cables', url: '' },
+                                    { title: 'Chargers', url: '' },
+                                    { title: 'Covers', url: '' },
+                                    { title: 'Power Banks', url: '' },
+                                    { title: 'Storage Devices', url: '' },
                                 ],
                             },
                         ],
@@ -214,13 +42,13 @@ export default [
                         size: 6,
                         links: [
                             {
-                                title: 'Instruments',
+                                title: 'TABLETS',
                                 url: '',
                                 links: [
-                                    { title: 'Welding Equipment', url: '' },
-                                    { title: 'Power Tools', url: '' },
-                                    { title: 'Hand Tools', url: '' },
-                                    { title: 'Measuring Tool', url: '' },
+                                    { title: 'Ipads', url: '' },
+                                    { title: 'Kids & Tablet', url: '' },
+                                    { title: 'Tablet Accessories', url: '' },
+                                    { title: 'Featured Tablets', url: '' },
                                 ],
                             },
                         ],
@@ -230,36 +58,69 @@ export default [
         },
     },
     {
-        title: 'Building Supplies',
+        title: 'Electronics',
         url: '',
         submenu: {
             type: 'megamenu',
             menu: {
-                size: 'sm',
+                size: 'lg',
+                image: {
+                    ltr: 'images/megamenu/megamenu-2-ltr.jpg',
+                    rtl: 'images/megamenu/megamenu-2-rtl.jpg',
+                },
                 columns: [
                     {
-                        size: 12,
+                        size: 4,
                         links: [
                             {
-                                title: 'Hand Tools',
+                                title: 'TELEVISIONS',
                                 url: '',
                                 links: [
-                                    { title: 'Screwdrivers', url: '' },
-                                    { title: 'Handsaws', url: '' },
-                                    { title: 'Knives', url: '' },
-                                    { title: 'Axes', url: '' },
-                                    { title: 'Multitools', url: '' },
-                                    { title: 'Paint Tools', url: '' },
+                                    { title: 'Smart TVs', url: '' },
+                                    { title: 'Curved TVs', url: '' },
+                                    { title: 'Television Accessories', url: '' },
+                                    { title: 'Digital TV', url: '' },
                                 ],
                             },
                             {
-                                title: 'Garden Equipment',
+                                title: 'Audios and Speakers',
                                 url: '',
                                 links: [
-                                    { title: 'Motor Pumps', url: '' },
-                                    { title: 'Chainsaws', url: '' },
-                                    { title: 'Electric Saws', url: '' },
-                                    { title: 'Brush Cutters', url: '' },
+                                    { title: 'Bluetooth Speakers', url: '' },
+                                    { title: 'DVD Players', url: '' },
+                                    { title: 'Sound Bars', url: '' },
+                                    { title: 'Subwoofers', url: '' },
+                                    { title: 'Home Theaters', url: '' },
+                                    { title: 'Receivers and Amplifiers', url: '' },
+                                ],
+                            },
+                        ],
+                    },
+                    {
+                        size: 4,
+                        links: [
+                            {
+                                title: 'Best Brands',
+                                url: '',
+                                links: [
+                                    { title: 'Star X', url: '' },
+                                    { title: 'LG', url: '' },
+                                    { title: 'Samsung', url: '' },
+                                    { title: 'Sonny', url: '' },
+                                    { title: 'Hisense', url: '' },
+                                ],
+                            },
+                        ],
+                    },
+                    {
+                        size: 4,
+                        links: [
+                            {
+                                title: 'Audio Devices',
+                                url: '',
+                                links: [
+                                    { title: 'Earphones', url: '' },
+                                    { title: 'Headphones', url: '' },
                                 ],
                             },
                         ],
@@ -268,35 +129,14 @@ export default [
             },
         },
     },
-    {
-        title: 'Electrical',
-        url: '',
-        submenu: {
-            type: 'menu',
-            menu: [
-                {
-                    title: 'Soldering Equipment',
-                    url: '',
-                    submenu: [
-                        { title: 'Soldering Station', url: '' },
-                        { title: 'Soldering Dryers', url: '' },
-                        { title: 'Gas Soldering Iron', url: '' },
-                        { title: 'Electric Soldering Iron', url: '' },
-                    ],
-                },
-                { title: 'Light Bulbs', url: '' },
-                { title: 'Batteries', url: '' },
-                { title: 'Light Fixtures', url: '' },
-                { title: 'Warm Floor', url: '' },
-                { title: 'Generators', url: '' },
-                { title: 'UPS', url: '' },
-            ],
-        },
-    },
-    { title: 'Power Machinery', url: '', submenu: null },
-    { title: 'Measurement', url: '', submenu: null },
-    { title: 'Clothes & PPE', url: '', submenu: null },
-    { title: 'Plumbing', url: '', submenu: null },
-    { title: 'Storage & Organization', url: '', submenu: null },
-    { title: 'Welding & Soldering', url: '', submenu: null },
+    { title: 'Electronics', url: '', submenu: null },
+    { title: 'Home & Living', url: '', submenu: null },
+    { title: 'Computers', url: '', submenu: null },
+    { title: 'Automobile', url: '', submenu: null },
+    { title: 'Video Games', url: '', submenu: null },
+    { title: 'Toys & Kids', url: '', submenu: null },
+    { title: 'Camera and Watches', url: '', submenu: null },
+    { title: 'Health & Beauty', url: '', submenu: null },
+    { title: 'Afrocrafts', url: '', submenu: null },
+    { title: 'More Categories', url: '', submenu: null },
 ];

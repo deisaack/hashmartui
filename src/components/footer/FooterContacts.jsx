@@ -10,10 +10,10 @@ export default function FooterContacts() {
         <div className="site-footer__widget footer-contacts">
             <h5 className="footer-contacts__title">Contact Us</h5>
 
-            <div className="footer-contacts__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in feugiat
-                lorem. Pellentque ac placerat tellus.
-            </div>
+            {/*<div className="footer-contacts__text">*/}
+            {/*    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in feugiat*/}
+            {/*    lorem. Pellentque ac placerat tellus.*/}
+            {/*</div>*/}
 
             <ul className="footer-contacts__contacts">
                 <li>

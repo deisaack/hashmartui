@@ -17,6 +17,7 @@ import theme from '../../data/theme';
 
 
 export default class BlogPageCategory extends Component {
+
     constructor(props) {
         super(props);
 
@@ -34,9 +35,9 @@ export default class BlogPageCategory extends Component {
         const { page } = this.state;
 
         const breadcrumb = [
-            { title: 'Home', url: '' },
-            { title: 'Blog', url: '' },
-            { title: 'Latest News', url: '' },
+            { title: 'Home', url: '/' },
+            { title: 'Blog', url: '/blog/category-classic' },
+            { title: 'Latest News', url: '/blog/category-classic' },
         ];
 
         let sidebarStart;
@@ -50,6 +51,7 @@ export default class BlogPageCategory extends Component {
             sidebarEnd = <div className="col-12 col-lg-4">{sidebar}</div>;
         }
 
+        // TODO: Fetch post
         const postsList = posts.map((post) => {
             const postLayout = {
                 classic: 'grid-lg',

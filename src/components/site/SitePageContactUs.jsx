@@ -41,11 +41,11 @@ function SitePageContactUs() {
 
                                         <div className="contact-us__address">
                                             <p>
-                                                715 Fake Ave, Apt. 34, New York, NY 10021 USA
+                                                Yala Towers, Biashara Street, Nairobi Kenya
                                                 <br />
-                                                Email: stroyka@example.com
+                                                Email: info@hashmart.co.ke
                                                 <br />
-                                                Phone Number: +1 754 000-00-00
+                                                Phone Number: +254 716 110 444
                                             </p>
 
                                             <p>
@@ -58,19 +58,20 @@ function SitePageContactUs() {
                                                 Sunday: 10am-4pm
                                             </p>
 
-                                            <p>
+                                            {/*<p>*/}
 
-                                                <strong>Comment</strong>
-                                                <br />
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                elit. Curabitur suscipit suscipit mi, non tempor
-                                                nulla finibus eget. Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit.
-                                            </p>
+                                            {/*    <strong>Comment</strong>*/}
+                                            {/*    <br />*/}
+                                            {/*    Lorem ipsum dolor sit amet, consectetur adipiscing*/}
+                                            {/*    elit. Curabitur suscipit suscipit mi, non tempor*/}
+                                            {/*    nulla finibus eget. Lorem ipsum dolor sit amet,*/}
+                                            {/*    consectetur adipiscing elit.*/}
+                                            {/*</p>*/}
                                         </div>
                                     </div>
 
                                     <div className="col-12 col-lg-6">
+                                        {/* TODO: handle submission of Leave a Message*/}
                                         <h4 className="contact-us__header card-title">Leave us a Message</h4>
 
                                         <form>

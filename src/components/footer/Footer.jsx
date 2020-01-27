@@ -11,14 +11,13 @@ import theme from '../../data/theme';
 
 
 export default function Footer() {
+    // TODO: Fill Addresses for quick links
     const informationLinks = [
         { title: 'About Us', url: '' },
         { title: 'Delivery Information', url: '' },
         { title: 'Privacy Policy', url: '' },
         { title: 'Brands', url: '' },
         { title: 'Contact Us', url: '' },
-        { title: 'Returns', url: '' },
-        { title: 'Site Map', url: '' },
     ];
 
     const accountLinks = [
@@ -27,8 +26,6 @@ export default function Footer() {
         { title: 'Wish List', url: '' },
         { title: 'Newsletter', url: '' },
         { title: 'Specials', url: '' },
-        { title: 'Gift Certificates', url: '' },
-        { title: 'Affiliate', url: '' },
     ];
 
     return (
@@ -55,7 +52,7 @@ export default function Footer() {
                     <div className="site-footer__copyright">
                         Powered by
                         {' '}
-                        <a href="https://reactjs.org/" rel="noopener noreferrer" target="_blank">React</a>
+                        <a href="https://hashmart.co.ke/" rel="noopener noreferrer" target="_blank">Hashmart</a>
                         {' '}
                         — Design by
                         {' '}

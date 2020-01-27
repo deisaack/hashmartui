@@ -8,7 +8,7 @@ export default function BlockMap() {
             <div className="block-map__body">
                 <iframe
                     title="Google Map"
-                    src="https://maps.google.com/maps?q=Holbrook-Palmer%20Park&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                    src="https://maps.google.com/maps?q=Yala%20Towers&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
                     frameBorder="0"
                     scrolling="no"
                     marginHeight="0"

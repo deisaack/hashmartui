@@ -1,20 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5b6c674-8ead-4d10-b8d9-a84601b62d7b" name="Default Changelist" comment="" />
+    <list default="true" id="f5b6c674-8ead-4d10-b8d9-a84601b62d7b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blocks/BlockMap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blocks/BlockMap.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blog/BlogPageCategory.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog/BlogPageCategory.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/FooterContacts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/FooterContacts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/FooterNewsletter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/FooterNewsletter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Topbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Topbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/site/SitePageAboutUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/site/SitePageAboutUs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/site/SitePageContactUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/site/SitePageContactUs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/headerDepartments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/headerDepartments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/messages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/messages/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/messages/ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/messages/ru.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/header/_nav-panel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/header/_nav-panel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/pages/_about-us.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/_about-us.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/logo.svg" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1WHuQbLMk5pvnvlBhCjRtB5A5Yx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/megamenu" />
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/images/megamenu" />
     </key>
@@ -42,10 +74,22 @@
       <option name="presentableId" value="Default" />
       <updated>1578818825179</updated>
       <workItem from="1578818827480" duration="11617000" />
+      <workItem from="1578863621869" duration="12215000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

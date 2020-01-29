@@ -27,8 +27,7 @@ export default function AccountPageProfile() {
                             <input
                                 id="profile-first-name"
                                 type="text"
-                                className="form-control"
-                                placeholder="First Name"
+                                className="form-input"
                             />
                         </div>
                         <div className="form-group">
@@ -36,8 +35,7 @@ export default function AccountPageProfile() {
                             <input
                                 id="profile-last-name"
                                 type="text"
-                                className="form-control"
-                                placeholder="Last Name"
+                                className="form-input"
                             />
                         </div>
                         <div className="form-group">
@@ -45,8 +43,7 @@ export default function AccountPageProfile() {
                             <input
                                 id="profile-email"
                                 type="email"
-                                className="form-control"
-                                placeholder="Email Address"
+                                className="form-input"
                             />
                         </div>
                         <div className="form-group">
@@ -54,13 +51,12 @@ export default function AccountPageProfile() {
                             <input
                                 id="profile-phone"
                                 type="text"
-                                className="form-control"
-                                placeholder="Phone Number"
+                                className="form-input"
                             />
                         </div>
 
                         <div className="form-group mt-5 mb-0">
-                            <button type="button" className="btn btn-primary">Save</button>
+                            <button type="button"  className="btn btn-primary form-submit">Save</button>
                         </div>
                     </div>
                 </div>

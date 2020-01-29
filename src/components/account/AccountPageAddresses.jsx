@@ -36,7 +36,7 @@ export default function AccountPageAddresses() {
                         <div className="address-card__row-content">{address.email}</div>
                     </div>
                     <div className="address-card__footer">
-                        <Link to="/">Edit</Link>
+                        <Link to="/account/edit-address">Edit</Link>
                         &nbsp;&nbsp;
                         <Link to="/">Remove</Link>
                     </div>
@@ -52,7 +52,7 @@ export default function AccountPageAddresses() {
                 <title>{`Address List — ${theme.name}`}</title>
             </Helmet>
 
-            <Link to="/" className="addresses-list__item addresses-list__item--new">
+            <Link to="/account/new-address" className="addresses-list__item addresses-list__item--new">
                 <div className="addresses-list__plus" />
                 <div className="btn btn-secondary btn-sm">Add New</div>
             </Link>
@@ -60,4 +60,4 @@ export default function AccountPageAddresses() {
             {addresses}
         </div>
     );
-}
+ }

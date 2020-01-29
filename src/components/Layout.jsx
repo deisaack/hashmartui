@@ -37,6 +37,8 @@ import ShopPageCategory from './shop/ShopPageCategory';
 
 // data stubs
 import theme from '../data/theme';
+import LoginRegister from "./account/LoginRegister";
+import NewAddress from "./account/NewAddress";
 
 
 function Layout(props) {
@@ -133,7 +135,6 @@ function Layout(props) {
                                 <ShopPageProduct {...props} layout="sidebar" />
                             )}
                         />
-
                         <Route exact path="/shop/cart" component={PageCart} />
                         <Route exact path="/shop/checkout" component={PageCheckout} />
                         <Route exact path="/shop/wishlist" component={PageWishlist} />
@@ -190,8 +191,10 @@ function Layout(props) {
                         {/*
                         // Account
                         */}
-                        <Route exact path="/account/login" component={AccountPageLogin} />
+                        <Route exact path="/accounts/loginN" component={AccountPageLogin} />
                         <Route path="/account" component={AccountLayout} />
+                        <Route exact path="/account/acc" component={LoginRegister} />
+                        <Route  path="/account/new-address" component={NewAddress} />
 
                         {/*
                         // Site

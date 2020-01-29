@@ -7,11 +7,8 @@ import { Link } from 'react-router-dom';
 
 // application
 import BlockHeader from '../shared/BlockHeader';
-
-
 export default function BlockCategories(props) {
     const { title, layout, categories } = props;
-
     const categoriesList = categories.map((category, index) => {
         const classes = `block-categories__item category-card category-card--layout--${layout}`;
 

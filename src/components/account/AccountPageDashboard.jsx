@@ -26,7 +26,6 @@ export default function AccountPageDashboard() {
             <td>{order.total}</td>
         </tr>
     ));
-
     return (
         <div className="dashboard">
             <Helmet>
@@ -67,7 +66,7 @@ export default function AccountPageDashboard() {
                         <div className="address-card__row-content">{address.email}</div>
                     </div>
                     <div className="address-card__footer">
-                        <Link to="/">Edit Address</Link>
+                        <Link to="/account/edit-address">Edit Address</Link>
                     </div>
                 </div>
             </div>

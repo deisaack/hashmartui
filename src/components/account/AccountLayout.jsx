@@ -13,6 +13,10 @@ import {
 
 // application
 import PageHeader from '../shared/PageHeader';
+import "../../css/style.css"
+import "bootstrap/dist/css/bootstrap.min.css";
+
+
 
 // pages
 import AccountPageAddresses from './AccountPageAddresses';
@@ -20,6 +24,9 @@ import AccountPageDashboard from './AccountPageDashboard';
 import AccountPageOrders from './AccountPageOrders';
 import AccountPagePassword from './AccountPagePassword';
 import AccountPageProfile from './AccountPageProfile';
+import LoginRegister from "./LoginRegister";
+import NewAddress from "./NewAddress";
+import EditAddress from "./EditAddress";
 
 
 export default function AccountLayout(props) {
@@ -36,7 +43,7 @@ export default function AccountLayout(props) {
         { title: 'Order History', url: 'orders' },
         { title: 'Addresses', url: 'addresses' },
         { title: 'Password', url: 'password' },
-        { title: 'Logout', url: 'login' },
+        { title: 'Logout', url: 'acc' },
     ].map((link) => {
         const url = `${match.url}/${link.url}`;
         const isActive = matchPath(location.pathname, { path: url });
@@ -64,7 +71,10 @@ export default function AccountLayout(props) {
                                 <ul>{links}</ul>
                             </div>
                         </div>
-                        <div className="col-12 col-lg-9 mt-4 mt-lg-0">
+
+                        <div className="col-12 col-lg-1 d-flex"> </div>
+
+                        <div className="col-12 col-lg-8 mt-4 mt-lg-0">
                             <Switch>
                                 <Redirect exact from={match.path} to={`${match.path}/dashboard`} />
                                 <Route exact path={`${match.path}/dashboard`} component={AccountPageDashboard} />
@@ -72,6 +82,9 @@ export default function AccountLayout(props) {
                                 <Route exact path={`${match.path}/orders`} component={AccountPageOrders} />
                                 <Route exact path={`${match.path}/addresses`} component={AccountPageAddresses} />
                                 <Route exact path={`${match.path}/password`} component={AccountPagePassword} />
+                                <Route exact path={`${match.path}/acc`} component={LoginRegister} />
+                                <Route exact path={`${match.path}/new-address`} component={NewAddress} />
+                                <Route exact path={`${match.path}/edit-address`} component={EditAddress} />
                             </Switch>
                         </div>
                     </div>

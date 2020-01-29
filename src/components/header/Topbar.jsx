@@ -27,7 +27,7 @@ function Topbar() {
         { title: 'Order History', url: '/account/orders' },
         { title: 'Addresses', url: '/account/addresses' },
         { title: 'Password', url: '/account/password' },
-        { title: 'Logout', url: '/account/login' },
+        { title: 'Logout', url: '/account/acc' },
     ];
 
     const linksList = links.map((item, index) => (

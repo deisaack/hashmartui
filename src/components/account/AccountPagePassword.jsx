@@ -1,13 +1,9 @@
 // react
 import React from 'react';
-
 // third-party
 import { Helmet } from 'react-helmet';
-
 // data stubs
 import theme from '../../data/theme';
-
-
 export default function AccountPagePassword() {
     return (
         <div className="card">
@@ -23,35 +19,32 @@ export default function AccountPagePassword() {
                 <div className="row no-gutters">
                     <div className="col-12 col-lg-7 col-xl-6">
                         <div className="form-group">
-                            <label htmlFor="password-current">Current Password</label>
                             <input
                                 type="password"
-                                className="form-control"
+                                className="form-input"
                                 id="password-current"
                                 placeholder="Current Password"
                             />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="password-new">New Password</label>
                             <input
                                 type="password"
-                                className="form-control"
+                                className="form-input"
                                 id="password-new"
                                 placeholder="New Password"
                             />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="password-confirm">Reenter New Password</label>
                             <input
                                 type="password"
-                                className="form-control"
+                                className="form-input"
                                 id="password-confirm"
-                                placeholder="Reenter New Password"
+                                placeholder="Re-enter New Password"
                             />
                         </div>
 
                         <div className="form-group mt-5 mb-0">
-                            <button type="button" className="btn btn-primary">Change</button>
+                            <button type="button"  className="form-submit btn btn-primary">Change</button>
                         </div>
                     </div>
                 </div>

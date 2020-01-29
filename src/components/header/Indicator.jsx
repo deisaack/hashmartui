@@ -91,7 +91,6 @@ class Indicator extends Component {
         if (value !== undefined) {
             value = <span className="indicator__value">{value}</span>;
         }
-
         const title = (
             <span className="indicator__area">
                 {icon}

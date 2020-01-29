@@ -37,7 +37,6 @@ function Header(props) {
             </div>
         );
     }
-
     return (
         <div className="site-header">
             <Topbar />

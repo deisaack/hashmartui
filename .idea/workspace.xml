@@ -2,24 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5b6c674-8ead-4d10-b8d9-a84601b62d7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/account/EditAddress.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/account/LoginRegister.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/account/NewAddress.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Functions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/LeftNavigation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/account/AccountLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/account/AccountLayout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/account/AccountPageAddresses.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/account/AccountPageAddresses.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/account/AccountPageDashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/account/AccountPageDashboard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/account/AccountPagePassword.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/account/AccountPagePassword.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/account/AccountPageProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/account/AccountPageProfile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blocks/BlockCategories.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blocks/BlockCategories.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Indicator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Indicator.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Topbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Topbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/account/LoginRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/account/LoginRegister.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Departments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Departments.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/DepartmentsLinks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/DepartmentsLinks.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/headerDepartments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/headerDepartments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/headerNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/headerNavigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,11 +38,23 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
@@ -60,18 +67,6 @@
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -88,6 +83,8 @@
       <workItem from="1580158739903" duration="4557000" />
       <workItem from="1580216755566" duration="27168000" />
       <workItem from="1580282801768" duration="14551000" />
+      <workItem from="1580361088922" duration="19000" />
+      <workItem from="1580361206339" duration="21637000" />
     </task>
     <servers />
   </component>
@@ -106,5 +103,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="700" y="263" width="607" height="536" key="find.popup" timestamp="1580375974168">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="700" y="263" width="607" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580375974168" />
+    <state x="667" y="244" width="672" height="678" key="search.everywhere.popup" timestamp="1580375967316">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="244" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580375967316" />
   </component>
 </project>

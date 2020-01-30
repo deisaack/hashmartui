@@ -13,8 +13,8 @@ import { ArrowRoundedRight6x9Svg } from '../../svg';
 import departments from '../../data/headerDepartments';
 
 
-function DepartmentsLinks() {
-    const linksList = departments.map((department, index) => {
+function DepartmentsLinks(linksList) {
+    return linksList.map((department, index) => {
         let arrow = null;
         let submenu = null;
         let itemClass = '';
@@ -50,12 +50,6 @@ function DepartmentsLinks() {
             </li>
         );
     });
-
-    return (
-        <ul className="departments__links">
-            {linksList}
-        </ul>
-    );
 }
 
 export default DepartmentsLinks;

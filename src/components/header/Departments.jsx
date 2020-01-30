@@ -5,6 +5,8 @@ import React, { Component } from 'react';
 import departmentsArea from '../../services/departmentsArea';
 import DepartmentsLinks from './DepartmentsLinks';
 import { Menu18x14Svg, ArrowRoundedDown9x6Svg } from '../../svg';
+import {Services} from "../../Services";
+import Functions from "../../Functions";
 
 
 class Departments extends Component {
@@ -15,7 +17,69 @@ class Departments extends Component {
             open: false,
             fixed: false,
             area: null,
+            menu: [
+                {
+                    title: 'Phones & Tablets',
+                    url: '',
+                    submenu: {
+                        type: 'megamenu',
+                        menu: {
+                            size: 'nl',
+                            image: {
+                                ltr: 'images/megamenu/megamenu-3-ltr.jpg',
+                                rtl: 'images/megamenu/megamenu-3-rtl.jpg',
+                            },
+                            columns: [
+                                {
+                                    size: 6,
+                                    links: [
+                                        {
+                                            title: 'MOBILE PHONES',
+                                            url: '',
+                                            links: [
+                                                { title: 'Smart Phones', url: '' },
+                                                { title: 'Blu Phones', url: '' },
+                                                { title: 'Feature Phones', url: '' },
+                                                { title: 'IPhones', url: '' },
+                                            ],
+                                        },
+                                        {
+                                            title: 'ACCESSORIES',
+                                            url: '',
+                                            links: [
+                                                { title: 'Batteries', url: '' },
+                                                { title: 'Cables', url: '' },
+                                                { title: 'Chargers', url: '' },
+                                                { title: 'Covers', url: '' },
+                                                { title: 'Power Banks', url: '' },
+                                                { title: 'Storage Devices', url: '' },
+                                            ],
+                                        },
+                                    ],
+                                },
+                                {
+                                    size: 6,
+                                    links: [
+                                        {
+                                            title: 'TABLETS',
+                                            url: '',
+                                            links: [
+                                                { title: 'Ipads', url: '' },
+                                                { title: 'Kids & Tablet', url: '' },
+                                                { title: 'Tablet Accessories', url: '' },
+                                                { title: 'Featured Tablets', url: '' },
+                                            ],
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                },
+            ]
         };
+        this.services = new Services(this);
+        this.funcs = new Functions(this)
     }
 
     componentDidMount() {
@@ -32,7 +96,180 @@ class Departments extends Component {
             fixed: !!departmentsArea.area,
             area: departmentsArea.area,
         });
+        this.getMenu();
     }
+
+    getMenu = e => {
+        this.services.getProductsMainMenu().then(resp=>{
+            if (resp.status === 200) {
+                let megamenu = [];
+                resp.data.map((item, index)=>{
+                    let productCategory = item.productCategory;
+                    let products = item.products;
+                    let categories  = item.products;
+                    let submenu = null
+                    let menu = {
+                        title: productCategory.productCategoryDescription,
+                        url: "/cat/" + productCategory.categoryCode,
+                        submenu: submenu
+                    };
+                    if (categories.length > 0) {
+                        submenu = [];
+                    }
+                    let columns = [];
+                    categories.map((category, i)=>{
+
+                    });
+                    megamenu.push(menu)
+                });
+                this.setState({
+                    menud: [
+                        {
+                            title: 'Phones & Tablets',
+                            url: '',
+                            submenu: {
+                                type: 'megamenu',
+                                menu: {
+                                    size: 'nl',
+                                    image: {
+                                        ltr: 'images/megamenu/megamenu-3-ltr.jpg',
+                                        rtl: 'images/megamenu/megamenu-3-rtl.jpg',
+                                    },
+                                    columns: [
+                                        {
+                                            size: 6,
+                                            links: [
+                                                {
+                                                    title: 'MOBILE PHONES',
+                                                    url: '',
+                                                    links: [
+                                                        { title: 'Smart Phones', url: '' },
+                                                        { title: 'Blu Phones', url: '' },
+                                                        { title: 'Feature Phones', url: '' },
+                                                        { title: 'IPhones', url: '' },
+                                                    ],
+                                                },
+                                                {
+                                                    title: 'ACCESSORIES',
+                                                    url: '',
+                                                    links: [
+                                                        { title: 'Batteries', url: '' },
+                                                        { title: 'Cables', url: '' },
+                                                        { title: 'Chargers', url: '' },
+                                                        { title: 'Covers', url: '' },
+                                                        { title: 'Power Banks', url: '' },
+                                                        { title: 'Storage Devices', url: '' },
+                                                    ],
+                                                },
+                                            ],
+                                        },
+                                        {
+                                            size: 6,
+                                            links: [
+                                                {
+                                                    title: 'TABLETS',
+                                                    url: '',
+                                                    links: [
+                                                        { title: 'Ipads', url: '' },
+                                                        { title: 'Kids & Tablet', url: '' },
+                                                        { title: 'Tablet Accessories', url: '' },
+                                                        { title: 'Featured Tablets', url: '' },
+                                                    ],
+                                                },
+                                            ],
+                                        },
+                                    ],
+                                },
+                            },
+                        },
+                        {
+                            title: 'Electronics',
+                            url: '',
+                            submenu: {
+                                type: 'megamenu',
+                                menu: {
+                                    size: 'lg',
+                                    image: {
+                                        ltr: 'images/megamenu/megamenu-2-ltr.jpg',
+                                        rtl: 'images/megamenu/megamenu-2-rtl.jpg',
+                                    },
+                                    columns: [
+                                        {
+                                            size: 4,
+                                            links: [
+                                                {
+                                                    title: 'TELEVISIONS',
+                                                    url: '',
+                                                    links: [
+                                                        { title: 'Smart TVs', url: '' },
+                                                        { title: 'Curved TVs', url: '' },
+                                                        { title: 'Television Accessories', url: '' },
+                                                        { title: 'Digital TV', url: '' },
+                                                    ],
+                                                },
+                                                {
+                                                    title: 'Audios and Speakers',
+                                                    url: '',
+                                                    links: [
+                                                        { title: 'Bluetooth Speakers', url: '' },
+                                                        { title: 'DVD Players', url: '' },
+                                                        { title: 'Sound Bars', url: '' },
+                                                        { title: 'Subwoofers', url: '' },
+                                                        { title: 'Home Theaters', url: '' },
+                                                        { title: 'Receivers and Amplifiers', url: '' },
+                                                    ],
+                                                },
+                                            ],
+                                        },
+                                        {
+                                            size: 4,
+                                            links: [
+                                                {
+                                                    title: 'Best Brands',
+                                                    url: '',
+                                                    links: [
+                                                        { title: 'Star X', url: '' },
+                                                        { title: 'LG', url: '' },
+                                                        { title: 'Samsung', url: '' },
+                                                        { title: 'Sonny', url: '' },
+                                                        { title: 'Hisense', url: '' },
+                                                    ],
+                                                },
+                                            ],
+                                        },
+                                        {
+                                            size: 4,
+                                            links: [
+                                                {
+                                                    title: 'Audio Devices',
+                                                    url: '',
+                                                    links: [
+                                                        { title: 'Earphones', url: '' },
+                                                        { title: 'Headphones', url: '' },
+                                                    ],
+                                                },
+                                            ],
+                                        },
+                                    ],
+                                },
+                            },
+                        },
+                        { title: 'Electronics', url: '', submenu: null },
+                        { title: 'Home & Living', url: '', submenu: null },
+                        { title: 'Computers', url: '', submenu: null },
+                        { title: 'Automobile', url: '', submenu: null },
+                        { title: 'Video Games', url: '', submenu: null },
+                        { title: 'Toys & Kids', url: '', submenu: null },
+                        { title: 'Camera and Watches', url: '', submenu: null },
+                        { title: 'Health & Beauty', url: '', submenu: null },
+                        { title: 'Afrocrafts', url: '', submenu: null },
+                        { title: 'More Categories', url: '', submenu: null },
+                    ],
+                    menu: megamenu
+                })
+            }
+        })
+    };
 
     componentDidUpdate(prevProps, prevState) {
         const { fixed, area, open } = this.state;
@@ -125,7 +362,10 @@ class Departments extends Component {
             <div className="departments" ref={this.setWrapperRef}>
                 <div className="departments__body">
                     <div className="departments__links-wrapper" onTransitionEnd={this.handleTransitionEnd}>
-                        <DepartmentsLinks />
+                        <ul className="departments__links">
+                            {/*{linksList}*/}
+                            {DepartmentsLinks(this.state.menu)}
+                        </ul>
                     </div>
                 </div>
 

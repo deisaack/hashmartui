@@ -20,6 +20,7 @@ import categories from '../../data/shopBlockCategories';
 import posts from '../../data/blogPosts';
 import products from '../../data/shopProducts';
 import theme from '../../data/theme';
+import BlockHashmartProduct from "../blocks/BlockHashmartProduct";
 
 
 function HomePageOne() {
@@ -48,7 +49,7 @@ function HomePageOne() {
 
             <BlockFeatures />
 
-            <BlockTabbedProductsCarousel title="Featured Products" layout="grid-4" />
+            <BlockHashmartProduct title="Featured Products" layout="grid-4" />
 
             <BlockBanner />
 

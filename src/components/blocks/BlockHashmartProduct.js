@@ -13,7 +13,7 @@ import {Services} from "../../Services";
 import Functions from "../../Functions";
 
 
-export default class BlockTabbedProductsCarousel extends Component {
+export default class BlockHashmartProduct extends Component {
     timeout;
 
     constructor(props) {
@@ -93,14 +93,14 @@ export default class BlockTabbedProductsCarousel extends Component {
     }
 }
 
-BlockTabbedProductsCarousel.propTypes = {
+BlockHashmartProduct.propTypes = {
     title: PropTypes.string.isRequired,
     layout: PropTypes.oneOf(['grid-4', 'grid-4-sm', 'grid-5', 'horizontal']),
     rows: PropTypes.number,
     withSidebar: PropTypes.bool,
 };
 
-BlockTabbedProductsCarousel.defaultProps = {
+BlockHashmartProduct.defaultProps = {
     layout: 'grid-4',
     rows: 1,
     withSidebar: false,

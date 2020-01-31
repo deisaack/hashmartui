@@ -11,6 +11,8 @@ import { Link } from 'react-router-dom';
 import departmentsAria from '../../services/departmentsArea';
 import languages from '../../i18n';
 import StroykaSlick from '../shared/StroykaSlick';
+import Functions from "../../Functions";
+import {Services} from "../../Services";
 
 
 const slickSettings = {
@@ -27,56 +29,14 @@ class BlockSlideShow extends Component {
 
     media = window.matchMedia('(min-width: 992px)');
 
-    slides = [
-        {
-            title: 'Big choice of<br>Plumbing products',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Etiam pharetra laoreet dui quis molestie.',
-            image_classic: {
-                ltr: 'images/slides/slide-1-ltr.jpg',
-                rtl: 'images/slides/slide-1-rtl.jpg',
-            },
-            image_full: {
-                ltr: 'images/slides/slide-1-full-ltr.jpg',
-                rtl: 'images/slides/slide-1-full-rtl.jpg',
-            },
-            image_mobile: {
-                ltr: 'images/slides/slide-1-mobile.jpg',
-                rtl: 'images/slides/slide-1-mobile.jpg',
-            },
-        },
-        {
-            title: 'Screwdrivers<br>Professional Tools',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Etiam pharetra laoreet dui quis molestie.',
-            image_classic: {
-                ltr: 'images/slides/slide-2-ltr.jpg',
-                rtl: 'images/slides/slide-2-rtl.jpg',
-            },
-            image_full: {
-                ltr: 'images/slides/slide-2-full-ltr.jpg',
-                rtl: 'images/slides/slide-2-full-rtl.jpg',
-            },
-            image_mobile: {
-                ltr: 'images/slides/slide-2-mobile.jpg',
-                rtl: 'images/slides/slide-2-mobile.jpg',
-            },
-        },
-        {
-            title: 'One more<br>Unique header',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Etiam pharetra laoreet dui quis molestie.',
-            image_classic: {
-                ltr: 'images/slides/slide-3-ltr.jpg',
-                rtl: 'images/slides/slide-3-rtl.jpg',
-            },
-            image_full: {
-                ltr: 'images/slides/slide-3-full-ltr.jpg',
-                rtl: 'images/slides/slide-3-full-rtl.jpg',
-            },
-            image_mobile: {
-                ltr: 'images/slides/slide-3-mobile.jpg',
-                rtl: 'images/slides/slide-3-mobile.jpg',
-            },
-        },
-    ];
+    constructor(props) {
+        super(props);
+        this.state = {
+            slides: [],
+        };
+        this.services = new Services(this);
+        this.funcs = new Functions(this);
+    }
 
     componentDidMount() {
         if (this.media.addEventListener) {
@@ -84,7 +44,12 @@ class BlockSlideShow extends Component {
         } else {
             this.media.addListener(this.onChangeMedia);
         }
+        this.fetchMenu();
     }
+
+    fetchMenu = () => {
+        this.services.fetchCorousel()
+    };
 
     componentWillUnmount() {
         departmentsAria.area = null;
@@ -130,7 +95,7 @@ class BlockSlideShow extends Component {
             },
         );
 
-        const slides = this.slides.map((slide, index) => {
+        const slides = this.state.slides.map((slide, index) => {
             const image = (withDepartments ? slide.image_classic : slide.image_full)[direction];
 
             return (

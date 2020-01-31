@@ -250,7 +250,7 @@ BlockProductsCarousel.propTypes = {
 
 BlockProductsCarousel.defaultProps = {
     layout: 'grid-4',
-    rows: 1,
+    rows: 3,
     products: [],
     groups: [],
     withSidebar: false,

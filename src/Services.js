@@ -16,6 +16,53 @@ export class Services {
         return axios.get(`${this.BASE_URL}/api/v1/hashmart/get-products-main-menue`, this.CONFIG);
     };
 
+    getProducts = () =>{
+        axios.get(`${this.BASE_URL}/api/v1/hashmart/get-products-main-menue`, this.CONFIG).then(resp=>{
+            this.that.setState({fetchedProducts: resp.data});
+        }).catch(err=>{this.__handleCatch(err)});
+    };
+
+    fetchCorousel = () =>{
+        axios.get(`${this.BASE_URL}/api/v1/hashmart/get-active-dashboard-images`, this.CONFIG).then(resp=>{
+            this.that.setState({
+                slides: [
+                    {
+                        title: 'Big choice of<br>Plumbing products',
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Etiam pharetra laoreet dui quis molestie.',
+                        image_classic: {
+                            ltr: 'images/slides/slide-1-ltr.jpg',
+                            rtl: 'images/slides/slide-1-rtl.jpg',
+                        },
+                        image_full: {
+                            ltr: 'images/slides/slide-1-full-ltr.jpg',
+                            rtl: 'images/slides/slide-1-full-rtl.jpg',
+                        },
+                        image_mobile: {
+                            ltr: 'images/slides/slide-1-mobile.jpg',
+                            rtl: 'images/slides/slide-1-mobile.jpg',
+                        },
+                    },
+                    {
+                        title: 'Screwdrivers<br>Professional Tools',
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Etiam pharetra laoreet dui quis molestie.',
+                        image_classic: {
+                            ltr: 'images/slides/slide-2-ltr.jpg',
+                            rtl: 'images/slides/slide-2-rtl.jpg',
+                        },
+                        image_full: {
+                            ltr: 'images/slides/slide-2-full-ltr.jpg',
+                            rtl: 'images/slides/slide-2-full-rtl.jpg',
+                        },
+                        image_mobile: {
+                            ltr: 'images/slides/slide-2-mobile.jpg',
+                            rtl: 'images/slides/slide-2-mobile.jpg',
+                        },
+                    },
+                ]
+            })
+        }).catch(err=>{this.__handleCatch(err)})
+    };
+
 
     __handleCatch(error) {
         console.log(error);

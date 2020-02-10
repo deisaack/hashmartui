@@ -5,12 +5,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
+
 // application
 import { ArrowRoundedLeft6x9Svg } from '../../svg';
 
 
 function FilterCategories(props) {
-    const { categories } = props;
+    const { categories} = props;
 
     const categoriesList = categories.map((category) => {
         let arrow;
@@ -27,16 +28,16 @@ function FilterCategories(props) {
             </li>
         );
     });
-
     return (
         <div className="filter-categories">
             <ul className="filter-categories__list">
                 {categoriesList}
+
             </ul>
+
         </div>
     );
 }
-
 FilterCategories.propTypes = {
     categories: PropTypes.array,
 };

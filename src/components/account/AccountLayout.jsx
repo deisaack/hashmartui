@@ -27,6 +27,7 @@ import AccountPageProfile from './AccountPageProfile';
 import LoginRegister from "./LoginRegister";
 import NewAddress from "./NewAddress";
 import EditAddress from "./EditAddress";
+import ResetPassword from "./ResetPassword";
 
 
 export default function AccountLayout(props) {
@@ -44,6 +45,8 @@ export default function AccountLayout(props) {
         { title: 'Addresses', url: 'addresses' },
         { title: 'Password', url: 'password' },
         { title: 'Logout', url: 'acc' },
+        { title: 'ResetPassword', url: 'reset-password' },
+
     ].map((link) => {
         const url = `${match.url}/${link.url}`;
         const isActive = matchPath(location.pathname, { path: url });
@@ -85,6 +88,7 @@ export default function AccountLayout(props) {
                                 <Route exact path={`${match.path}/acc`} component={LoginRegister} />
                                 <Route exact path={`${match.path}/new-address`} component={NewAddress} />
                                 <Route exact path={`${match.path}/edit-address`} component={EditAddress} />
+                                <Route exact path={`${match.path}/reset-password`} component={ResetPassword} />
                             </Switch>
                         </div>
                     </div>

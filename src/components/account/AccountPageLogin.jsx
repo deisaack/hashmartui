@@ -18,15 +18,12 @@ export default function AccountPageLogin() {
         { title: 'Home', url: '' },
         { title: 'My Account', url: '' },
     ];
-
     return (
         <React.Fragment>
             <Helmet>
                 <title>{`Login — ${theme.name}`}</title>
             </Helmet>
-
             <PageHeader header="My Account" breadcrumb={breadcrumb} />
-
             <div className="block">
                 <div className="container">
                     <div className="row">

@@ -42,10 +42,8 @@ export default class BlockHashmartProduct extends Component {
         clearTimeout(this.timeout);
 
     }
-
     handleChangeGroup = (newCurrentGroup) => {
         clearTimeout(this.timeout);
-
         const { groups } = this.state;
         const currentGroup = groups.find((group) => group.current);
 

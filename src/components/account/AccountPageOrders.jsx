@@ -29,7 +29,6 @@ export default class AccountPageOrders extends Component {
 
     render() {
         const { page, orders } = this.state;
-
         const ordersList = orders.map((order) => (
             <tr key={order.id}>
                 <td><Link to="/">{`#${order.id}`}</Link></td>

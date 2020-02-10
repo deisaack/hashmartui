@@ -179,8 +179,8 @@ class LoginRegister  extends React.Component {
                                                 </div>
                                             </form>
                                             <p className="loginhere">
-                                                Have already an account ? <a onClick={this.toShowLoginForm} className="loginhere-link">Login
-                                                here</a>
+                                                Have already an account ? <Link onClick={this.toShowLoginForm} className="loginhere-link">Login
+                                                here</Link>
                                             </p>
                                         </div>
                                     </div>
@@ -212,7 +212,7 @@ class LoginRegister  extends React.Component {
                                                 <div className="form-group">
                                                     <input type="checkbox" name="rememberMe" id="rememberMe"
                                                            onChange={this.funcs.handleChange}
-                                                           onBlur={this.funcs.handleBlur}
+                                                            onBlur={this.funcs.handleBlur}
                                                            onFocus={this.funcs.handleFocus}
                                                            value={this.state.rememberMe}
                                                            className="agree-term"/>
@@ -227,8 +227,8 @@ class LoginRegister  extends React.Component {
                                                 </div>
                                             </form>
                                             <p className="loginhere">
-                                                Dont have an account ? <a onClick={this.toShowRegForm} className="loginhere-link">Register
-                                                here</a>
+                                                Dont have an account ? <Link onClick={this.toShowRegForm} className="loginhere-link">Register
+                                                here</Link>
                                             </p>
                                         </div>
                                     </div>

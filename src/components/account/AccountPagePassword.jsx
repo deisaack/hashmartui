@@ -1,16 +1,17 @@
 // react
-import React from 'react';
+import React, {useState} from 'react';
 // third-party
 import { Helmet } from 'react-helmet';
 // data stubs
 import theme from '../../data/theme';
+const requiredFields=["password-current", "password-new", "password-confirm"];
+
 export default function AccountPagePassword() {
     return (
         <div className="card">
             <Helmet>
                 <title>{`Change Password — ${theme.name}`}</title>
             </Helmet>
-
             <div className="card-header">
                 <h5>Change Password</h5>
             </div>
@@ -23,6 +24,7 @@ export default function AccountPagePassword() {
                                 type="password"
                                 className="form-input"
                                 id="password-current"
+                                name="password-current"
                                 placeholder="Current Password"
                             />
                         </div>
@@ -31,6 +33,7 @@ export default function AccountPagePassword() {
                                 type="password"
                                 className="form-input"
                                 id="password-new"
+                                name="password-new"
                                 placeholder="New Password"
                             />
                         </div>
@@ -39,6 +42,7 @@ export default function AccountPagePassword() {
                                 type="password"
                                 className="form-input"
                                 id="password-confirm"
+                                name="password-confirm"
                                 placeholder="Re-enter New Password"
                             />
                         </div>

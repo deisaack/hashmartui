@@ -16,6 +16,7 @@ export default [
                     type: 'parent',
                     count: 75,
                     name: 'Instruments',
+
                 },
                 {
                     id: 3,

@@ -1,10 +1,8 @@
 // react
 import React from 'react';
-
 // third-party
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-
 // application
 import BlockHeader from '../shared/BlockHeader';
 export default function BlockCategories(props) {
@@ -17,7 +15,6 @@ export default function BlockCategories(props) {
                 <Link to={sub.url}>{sub.title}</Link>
             </li>
         ));
-
         return (
             <div key={index} className={classes}>
                 <div className=" category-card__body">
@@ -61,7 +58,6 @@ BlockCategories.propTypes = {
     categories: PropTypes.array,
     layout: PropTypes.oneOf(['classic', 'compact']),
 };
-
 BlockCategories.defaultProps = {
     categories: [],
     layout: 'classic',

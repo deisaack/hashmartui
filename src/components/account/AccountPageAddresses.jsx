@@ -8,8 +8,6 @@ import { Link } from 'react-router-dom';
 // data stubs
 import dataAddresses from '../../data/accountAddresses';
 import theme from '../../data/theme';
-
-
 export default function AccountPageAddresses() {
     const addresses = dataAddresses.map((address) => (
         <React.Fragment key={address.id}>

@@ -6,14 +6,12 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
-
 // application
 import Footer from './footer';
 import Header from './header';
 import MobileHeader from './mobile/MobileHeader';
 import MobileMenu from './mobile/MobileMenu';
 import Quickview from './shared/Quickview';
-
 // pages
 import AccountLayout from './account/AccountLayout';
 import AccountPageLogin from './account/AccountPageLogin';
@@ -34,13 +32,11 @@ import ShopPageTrackOrder from './shop/ShopPageTrackOrder';
 import SitePageTypography from './site/SitePageTypography';
 import PageWishlist from './shop/ShopPageWishlist';
 import ShopPageCategory from './shop/ShopPageCategory';
-
 // data stubs
 import theme from '../data/theme';
 import LoginRegister from "./account/LoginRegister";
 import NewAddress from "./account/NewAddress";
-
-
+import ResetPassword from "./account/ResetPassword";
 function Layout(props) {
     const { match, headerLayout, homeComponent } = props;
 
@@ -195,7 +191,7 @@ function Layout(props) {
                         <Route path="/account" component={AccountLayout} />
                         <Route exact path="/account/acc" component={LoginRegister} />
                         <Route  path="/account/new-address" component={NewAddress} />
-
+                        <Route  path="/account/reset-password" component={ResetPassword} />
                         {/*
                         // Site
                         */}

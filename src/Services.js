@@ -11,7 +11,6 @@ export class Services {
         };
         this.CONFIG = {headers: this.AUTH};
     }
-
     getProductsMainMenu = e =>{
         return axios.get(`${this.BASE_URL}/api/v1/hashmart/get-products-main-menue`, this.CONFIG);
     };

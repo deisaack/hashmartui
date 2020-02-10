@@ -12,6 +12,10 @@ import BlockMap from '../blocks/BlockMap';
 
 // data stubs
 import theme from '../../data/theme';
+import {AvForm, AvField} from 'availity-reactstrap-validation'
+import {Container, Col, Form, FormGroup, Label,  Button, } from 'reactstrap'
+
+
 
 
 function SitePageContactUs() {
@@ -74,33 +78,69 @@ function SitePageContactUs() {
                                         {/* TODO: handle submission of Leave a Message*/}
                                         <h4 className="contact-us__header card-title">Leave us a Message</h4>
 
-                                        <form>
-                                            <div className="form-row">
-                                                <div className="form-group col-md-6">
-                                                    <label htmlFor="form-name">Your Name</label>
-                                                    <input type="text" id="form-name" className="form-control" placeholder="Your Name" />
-                                                </div>
-                                                <div className="form-group col-md-6">
-                                                    <label htmlFor="form-email">Email</label>
-                                                    <input
-                                                        type="email"
-                                                        id="form-email"
-                                                        className="form-control"
-                                                        placeholder="Email Address"
-                                                    />
-                                                </div>
-                                            </div>
-                                            <div className="form-group">
-                                                <label htmlFor="form-subject">Subject</label>
-                                                <input type="text" id="form-subject" className="form-control" placeholder="Subject" />
-                                            </div>
-                                            <div className="form-group">
-                                                <label htmlFor="form-message">Message</label>
-                                                <textarea id="form-message" className="form-control" rows="4" />
-                                            </div>
-                                            <button type="submit" className="btn btn-primary">Send Message</button>
-                                        </form>
 
+
+                                        <Container className="strap">
+                                            <AvForm>
+                                                <Col className="colu">
+                                                    <FormGroup className="form-group">
+                                                        <Label>Name</Label>
+                                                        <AvField
+                                                            type="text"
+                                                            className="form-AvField"
+                                                            id="name"
+                                                            name="name"
+                                                            validate={{
+                                                                required : {value: true, errorMessage: "This is a required field."},
+                                                            }}
+                                                        />
+                                                    </FormGroup>
+                                                </Col>
+                                                <Col>
+                                                    <FormGroup>
+                                                        <Label>Email</Label>
+                                                        <AvField
+                                                            type="email"
+                                                            className="form-AvField"
+                                                            id="email"
+                                                            name="email"
+                                                            validate={{
+                                                                required : {value: true, errorMessage: "This is a required field."},
+                                                                email: {value: true, errorMessage: "invalid email address"}
+                                                            }}
+                                                        />
+                                                    </FormGroup>
+                                                </Col>
+                                                <Col>
+                                                    <FormGroup>
+                                                        <Label>Phone number</Label>
+                                                        <AvField
+                                                            type="number"
+                                                            className="form-AvField"
+                                                            id="phoneNumber"
+                                                            name="phoneNumber"
+                                                            validate={{
+                                                                minLength: {value: 10}
+                                                            }}
+                                                        />
+                                                    </FormGroup>
+                                                    <FormGroup>
+                                                        <Label>Message</Label>
+                                                        <AvField
+                                                            type="textarea"
+                                                            className="form-AvField"
+                                                            id="message"
+                                                            name="message"
+                                                            validate={{
+                                                                minLength: {value: 10},
+                                                                required:{value:true, errorMessage:"This is a required field."}
+                                                            }}
+                                                        />
+                                                    </FormGroup>
+                                                </Col>
+                                                <Button className="form-submit" color="primary">submit</Button>
+                                            </AvForm>
+                                        </Container>
                                     </div>
                                 </div>
                             </div>

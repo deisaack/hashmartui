@@ -1,16 +1,11 @@
 // react
 import React from 'react';
-
 // third-party
 import { Link } from 'react-router-dom';
-
 // application
 import StroykaSlick from '../shared/StroykaSlick';
-
 // data stubs
 import brands from '../../data/shopBrands';
-
-
 const slickSettings = {
     dots: false,
     arrows: false,
@@ -51,12 +46,12 @@ const slickSettings = {
 };
 
 export default function BlockBrands() {
+
     const brandsList = brands.map((brand, index) => (
         <div key={index} className="block-brands__item">
             <Link to="/"><img src={brand.image} alt="" /></Link>
         </div>
     ));
-
     return (
         <div className="block block-brands">
             <div className="container">
